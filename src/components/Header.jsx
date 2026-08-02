@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import {
-  SearchIcon,
   UserIcon,
   HeartIcon,
   BagIcon,
@@ -9,7 +8,7 @@ import {
   CloseIcon,
 } from './Icons.jsx'
 
-const NAV = ['Headphones', 'Earbuds', 'Wireless Audio', 'Acoustic Craft', 'Technology', 'Sound Journal']
+const NAV = ['Headphones', 'Earbuds', 'Wireless Audio', 'Technology', 'Sound Journal', 'Support']
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -52,9 +51,6 @@ export default function Header() {
         </a>
 
         <div className="header-utils">
-          <a className="utility-link" href="#" aria-label="Search">
-            <span>Search</span> <SearchIcon />
-          </a>
           <a className="utility-link" href="#" aria-label="Account">
             <span>Account</span> <UserIcon />
           </a>

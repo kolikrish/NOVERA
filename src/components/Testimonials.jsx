@@ -19,9 +19,10 @@ const A = {
 const TESTIMONIALS = [
   {
     name: 'Meera Shah',
-    role: 'Mumbai',
+    role: 'Verified Listener · Mumbai',
     avatar: A.meera,
     label: 'Novera Pro Wireless ANC',
+    rating: '5.0',
     quote:
       '“The active noise cancellation on flights is unbelievable, and the acoustic clarity makes instrumentals sound like a live studio recording.”',
     bought: [
@@ -31,9 +32,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Ananya Iyer',
-    role: 'Bengaluru',
+    role: 'Verified Listener · Bengaluru',
     avatar: A.ananya,
     label: 'Novera Air Buds Pro',
+    rating: '5.0',
     quote:
       '“I wear these for 6 hours of work calls every day. Zero ear fatigue, crystal-clear mic isolation, and lightning-fast Bluetooth 5.3 pairing.”',
     bought: [
@@ -43,9 +45,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Radhika Menon',
-    role: 'Kochi',
+    role: 'Audiophile Producer · Kochi',
     avatar: A.radhika,
     label: 'Novera Studio Reference 500',
+    rating: '5.0',
     quote:
       '“As an audiophile, the wide soundstage and precise bass control on these 45mm titanium drivers blew me away. Worth every single rupee.”',
     bought: [
@@ -55,9 +58,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Sana Qureshi',
-    role: 'Hyderabad',
+    role: 'Fitness Athlete · Hyderabad',
     avatar: A.sana,
     label: 'Novera Pulse Sport',
+    rating: '5.0',
     quote:
       '“Sweatproof during intense workouts and never slips. The deep punchy bass really empowers every gym session.”',
     bought: [
@@ -67,9 +71,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Kavya Nair',
-    role: 'Chennai',
+    role: 'Sound Designer · Chennai',
     avatar: A.kavya,
     label: 'Novera Horizon Spatial',
+    rating: '5.0',
     quote:
       '“Watching movies with 360° spatial audio and head tracking feels like sitting in an IMAX theater. The sound immersion is unreal.”',
     bought: [
@@ -79,9 +84,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Nisha Bhatia',
-    role: 'Chandigarh',
+    role: 'Daily Commuter · Chandigarh',
     avatar: A.nisha,
     label: 'Novera Velvet Comfort',
+    rating: '5.0',
     quote:
       '“The memory foam ear cushions feel like pillows for your ears. 50-hour battery life means I only charge them once every two weeks!”',
     bought: [
@@ -91,9 +97,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Divya Reddy',
-    role: 'Hyderabad',
+    role: 'Verified Buyer · Hyderabad',
     avatar: A.divya,
     label: 'Novera Air Buds Mini',
+    rating: '5.0',
     quote:
       '“Featherlight earbuds that fit so comfortably you forget you are wearing them. The touch controls are incredibly responsive.”',
     bought: [
@@ -103,9 +110,10 @@ const TESTIMONIALS = [
   },
   {
     name: 'Farah Sheikh',
-    role: 'Lucknow',
+    role: 'Music Producer · Lucknow',
     avatar: A.farah,
     label: 'Novera Studio Producer Set',
+    rating: '5.0',
     quote:
       '“Zero latency when monitoring music production. Crystal clear high frequencies without any harshness.”',
     bought: [
@@ -115,50 +123,15 @@ const TESTIMONIALS = [
   },
   {
     name: 'Tara Deshpande',
-    role: 'Pune',
+    role: 'Remote Executive · Pune',
     avatar: A.tara,
     label: 'Novera Clarity ANC',
+    rating: '5.0',
     quote:
       '“The quad microphone array cuts out background noise completely. People on calls ask what mic setup I am using.”',
     bought: [
       { img: 'https://images.pexels.com/photos/27507165/pexels-photo-27507165.jpeg', name: 'Novera Clarity ANC' },
       { img: 'https://images.pexels.com/photos/210927/pexels-photo-210927.jpeg', name: 'USB-C Fast Charger' },
-    ],
-  },
-  {
-    name: 'Ishita Ghosh',
-    role: 'Kolkata',
-    avatar: A.ishita,
-    label: 'Novera Custom IEM',
-    quote:
-      '“Insane sound separation! Every vocal detail and subtle instrument note comes through with surgical precision.”',
-    bought: [
-      { img: 'https://images.pexels.com/photos/15394136/pexels-photo-15394136.jpeg', name: 'Novera Custom IEM' },
-      { img: 'https://images.pexels.com/photos/7862656/pexels-photo-7862656.jpeg', name: 'Memory Foam Tips Set' },
-    ],
-  },
-  {
-    name: 'Aditi Rao',
-    role: 'Bengaluru',
-    avatar: A.aditi,
-    label: 'Novera Pro Wireless ANC',
-    quote:
-      '“The companion EQ app allowed me to personalize the bass response perfectly to my music taste.”',
-    bought: [
-      { img: 'https://images.pexels.com/photos/8597722/pexels-photo-8597722.jpeg', name: 'Novera Pro Wireless ANC' },
-      { img: 'https://images.pexels.com/photos/8100068/pexels-photo-8100068.jpeg', name: 'Audio Stand Base' },
-    ],
-  },
-  {
-    name: 'Rhea Kapoor',
-    role: 'Delhi',
-    avatar: A.rhea,
-    label: 'Novera Air Buds Pro',
-    quote:
-      '“Compact case, incredible acoustic output, and rapid charging—gives 3 hours of playback in just 10 minutes.”',
-    bought: [
-      { img: 'https://images.pexels.com/photos/11945638/pexels-photo-11945638.jpeg', name: 'Novera Air Buds Pro' },
-      { img: 'https://images.pexels.com/photos/6686276/pexels-photo-6686276.jpeg', name: 'Keyring Lanyard Case' },
     ],
   },
 ]
@@ -181,7 +154,7 @@ export default function Testimonials() {
   const page = (dir) => {
     const track = trackRef.current
     if (!track) return
-    track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' })
+    track.scrollBy({ left: dir * (track.clientWidth * 0.85), behavior: 'smooth' })
   }
 
   return (
@@ -189,13 +162,13 @@ export default function Testimonials() {
       <div className="tw__frame" data-reveal>
         <header className="tw__head">
           <p className="tw__title">
-            Kind <em>Words.</em>
+            Listener <em>Stories.</em>
           </p>
 
           <div className="tw__meta">
             <div className="tw-rating">
               <Stars />
-              <span className="tw-rating__count">4,850+ Reviews</span>
+              <span className="tw-rating__count">4,950+ Verified Audio Reviews</span>
             </div>
 
             <div className="tw-loved">
@@ -228,22 +201,21 @@ export default function Testimonials() {
               <div className="tw-cell__inner">
                 <div className="tw-cell__face tw-cell__face--front">
                   <div className="tw-cell__person">
-                    <img src={t.avatar} alt="" loading="lazy" />
+                    <img src={t.avatar} alt={t.name} loading="lazy" />
                     <div>
                       <p className="tw-cell__name">{t.name}</p>
                       <p className="tw-cell__role">{t.role}</p>
                     </div>
                   </div>
 
-                  <p className="tw-cell__label">{t.label}</p>
+                  <span className="tw-cell__label">{t.label}</span>
 
                   <blockquote className="tw-cell__quote">{t.quote}</blockquote>
                 </div>
 
-                {/* back — the pieces she actually took home */}
                 <div className="tw-cell__face tw-cell__face--back">
                   <p className="tw-buys__eyebrow">
-                    {t.name.split(' ')[0]} took home
+                    {t.name.split(' ')[0]} listens to
                   </p>
 
                   <ul className="tw-buys">
@@ -258,7 +230,7 @@ export default function Testimonials() {
                   </ul>
 
                   <a className="tw-buys__link" href="#">
-                    Shop her picks
+                    View product details →
                   </a>
                 </div>
               </div>

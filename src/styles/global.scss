@@ -1,25 +1,17 @@
-/* ============================================================
-   SHRUJAN — Heritage by Hand
-   Mehendi green × Gerua terracotta on warm ivory.
-   Form follows the Zellerfeld structural system (design.md);
-   colour, type and mood follow the REKH reference.
-   ============================================================ */
-
 :root {
-  /* ---- Colour — White + #9FA1FF · #B5BAFF · #AEE2FF Palette -------------- */
   --ivory: #ffffff;          /* primary page canvas — clean white */
   --ivory-2: #f6f7ff;        /* raised card surface, soft periwinkle-white */
   --sand: #eef1ff;           /* soft borders, inset panels, soft sky-tint surface */
   --cream: #ffffff;          /* text on dark surfaces */
   --cream-dim: rgba(255, 255, 255, 0.85);
 
-  --ink: #181a38;            /* primary text — deep slate midnight */
-  --ink-soft: #52567a;       /* secondary text, muted periwinkle-slate */
-  --ink-deep: #10122d;       /* darkest navy slate for quote bands & contrast solids */
+  --ink: #181a38;
+  --ink-soft: #52567a;
+  --ink-deep: #10122d;
 
-  --plum: #181a38;           /* solid hero panels / dark contrast blocks */
-  --maroon: #13152c;         /* footer ground — deep royal navy */
-  --tan: #9fa1ff;            /* primary accent tone — #9FA1FF */
+  --plum: #181a38;
+  --maroon: #13152c;
+  --tan: #9fa1ff;
 
   /* legacy slots */
   --mehendi-900: #181a38;
@@ -27,12 +19,12 @@
   --mehendi-500: #9fa1ff;
   --mehendi-200: #aee2ff;
 
-  --gerua: #9fa1ff;          /* primary brand accent — #9FA1FF */
-  --gerua-600: #888af2;      /* hover state */
-  --gerua-300: #b5baff;      /* secondary accent — #B5BAFF */
-  --gerua-100: #aee2ff;      /* sky accent — #AEE2FF */
+  --gerua: #9fa1ff;
+  --gerua-600: #888af2;
+  --gerua-300: #b5baff;
+  --gerua-100: #aee2ff;
 
-  --gold: #b5baff;           /* soft highlight accent — #B5BAFF */
+  --gold: #b5baff;
 
   --hairline: rgba(159, 161, 255, 0.22);
   --hairline-strong: rgba(159, 161, 255, 0.45);
@@ -3676,7 +3668,7 @@ a.hero-cell:hover .hero-cell__label svg {
     margin-top: 10px;
     /* the one genuinely unbounded element in the section */
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

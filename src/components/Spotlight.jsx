@@ -44,11 +44,11 @@ export default function Spotlight() {
     <section className="section container spotlight" id="heritage" ref={root}>
       {/* ---- centred heading ---- */}
       <div className="spotlight__head" data-reveal>
-        <p className="eyebrow">Heritage &amp; Innovation</p>
+        <p className="eyebrow">Acoustic Engineering &amp; Innovation</p>
 
         <h2 className="spotlight__title">
           <span className="spotlight__line">
-            Heritage elegance
+            Acoustic excellence
             <span className="spotlight__chip">
               <img src="https://images.pexels.com/photos/15394136/pexels-photo-15394136.jpeg" alt="" loading="lazy" />
             </span>
@@ -58,7 +58,7 @@ export default function Spotlight() {
             <span className="spotlight__chip">
               <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg" alt="" loading="lazy" />
             </span>
-            through living craft
+            through precision sound
           </span>
         </h2>
       </div>
@@ -66,8 +66,7 @@ export default function Spotlight() {
       {/* ---- copy top-left ---- */}
       <div className="spotlight__split" data-reveal>
         <p className="spotlight__copy">
-          Shrujan merges centuries-old embroidery with contemporary silhouettes,
-          a refined and craft-driven wardrobe that aligns seamlessly with your life.
+          Novera merges studio-fidelity acoustics with sleek, minimalist ergonomics—a refined audio experience that connects you deeply to every note.
         </p>
       </div>
 
@@ -81,27 +80,27 @@ export default function Spotlight() {
 
         <p className="spotlight__ghost" aria-hidden="true">
           100%
-          <span>Hand-embroidered</span>
+          <span>Studio Sound</span>
         </p>
 
         <img
           className="spotlight__model"
           src="https://images.pexels.com/photos/3394666/pexels-photo-3394666.jpeg"
-          alt="Model in a crimson mirror-work jacket draped with a hand-embroidered patola sari"
+          alt="Novera Flagship Over-Ear Noise-Cancelling Headphones"
           loading="lazy"
         />
 
         <div className="spotlight__stat spotlight__stat--women">
-          <strong>4,000+</strong>
-          <span>Artisan women behind every piece</span>
+          <strong>40mm</strong>
+          <span>Titanium Acoustic Drivers</span>
         </div>
 
         <div className="spotlight__stat spotlight__stat--crafts">
-          <strong>12</strong>
-          <span>Living craft traditions of Kutch</span>
+          <strong>-38dB</strong>
+          <span>Active Hybrid Noise Isolation</span>
         </div>
 
-        <p className="spotlight__note">Every piece signed by the hands that made it</p>
+        <p className="spotlight__note">Engineered for crystal-clear audio &amp; deep bass</p>
 
         {/* two small plates balancing the circle */}
         <figure className="spotlight__plate spotlight__plate--tr" aria-hidden="true">
@@ -112,16 +111,15 @@ export default function Spotlight() {
         </figure>
 
         <div className="spotlight__stat spotlight__stat--villages">
-          <strong>40</strong>
-          <span>Villages across the Kutch desert</span>
+          <strong>50 Hours</strong>
+          <span>Extended Battery Life</span>
         </div>
       </div>
 
       {/* ---- closing copy, bottom-right ---- */}
       <div className="spotlight__outro" data-reveal>
         <p>
-          Naturally dyed cloth, hand-embroidered over weeks and finished in our Bhuj
-          atelier, made to be worn today and handed down tomorrow.
+          Precision-tuned acoustic chambers, ultra-soft memory foam cushions, and seamless Bluetooth 5.3 multipoint connectivity—crafted to empower your everyday listening.
         </p>
       </div>
     </section>

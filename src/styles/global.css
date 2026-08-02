@@ -6,36 +6,36 @@
    ============================================================ */
 
 :root {
-  /* ---- Colour — plum · crimson · gold · ivory ---------------- */
-  --ivory: #ffffff;          /* page canvas — matches the hero message card */
-  --ivory-2: #ffffff;        /* raised card surface, cream bands */
-  --sand: #ffffff;           /* soft borders, inset panels */
+  /* ---- Colour — White + #9FA1FF · #B5BAFF · #AEE2FF Palette -------------- */
+  --ivory: #ffffff;          /* primary page canvas — clean white */
+  --ivory-2: #f6f7ff;        /* raised card surface, soft periwinkle-white */
+  --sand: #eef1ff;           /* soft borders, inset panels, soft sky-tint surface */
   --cream: #ffffff;          /* text on dark surfaces */
-  --cream-dim: rgba(255, 255, 255, 0.72);
+  --cream-dim: rgba(255, 255, 255, 0.85);
 
-  --ink: #2e2230;            /* primary text — deep plum ink */
-  --ink-soft: #75665f;       /* secondary text, warm gray-brown */
-  --ink-deep: #2c1a27;       /* darkest plum, quote band */
+  --ink: #181a38;            /* primary text — deep slate midnight */
+  --ink-soft: #52567a;       /* secondary text, muted periwinkle-slate */
+  --ink-deep: #10122d;       /* darkest navy slate for quote bands & contrast solids */
 
-  --plum: #3b2434;           /* solid hero panels */
-  --maroon: #571c16;         /* footer ground — the gerua family, darkened */
-  --tan: #c7a56a;            /* solid gold cell */
+  --plum: #181a38;           /* solid hero panels / dark contrast blocks */
+  --maroon: #13152c;         /* footer ground — deep royal navy */
+  --tan: #9fa1ff;            /* primary accent tone — #9FA1FF */
 
-  /* legacy slots, re-pointed to the gold family (badges etc.) */
-  --mehendi-900: #4a3a1e;
-  --mehendi-700: #6e5730;
-  --mehendi-500: #94763f;
-  --mehendi-200: #e3d5af;
+  /* legacy slots */
+  --mehendi-900: #181a38;
+  --mehendi-700: #52567a;
+  --mehendi-500: #9fa1ff;
+  --mehendi-200: #aee2ff;
 
-  --gerua: #b23127;          /* primary accent — crimson */
-  --gerua-600: #90231c;      /* hover */
-  --gerua-300: #c05c50;      /* light accent on dark */
-  --gerua-100: #e8cfc4;
+  --gerua: #9fa1ff;          /* primary brand accent — #9FA1FF */
+  --gerua-600: #888af2;      /* hover state */
+  --gerua-300: #b5baff;      /* secondary accent — #B5BAFF */
+  --gerua-100: #aee2ff;      /* sky accent — #AEE2FF */
 
-  --gold: #b99155;
+  --gold: #b5baff;           /* soft highlight accent — #B5BAFF */
 
-  --hairline: rgba(46, 34, 48, 0.16);
-  --hairline-strong: rgba(46, 34, 48, 0.4);
+  --hairline: rgba(159, 161, 255, 0.22);
+  --hairline-strong: rgba(159, 161, 255, 0.45);
 
   /* ---- Type -------------------------------------------------- */
   --font-serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;

@@ -9,7 +9,7 @@ import {
   CloseIcon,
 } from './Icons.jsx'
 
-const NAV = ['New In', 'Women', 'Men', 'Collections', 'Craft', 'Stories']
+const NAV = ['Headphones', 'Earbuds', 'Wireless Audio', 'Acoustic Craft', 'Technology', 'Sound Journal']
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,7 +21,7 @@ export default function Header() {
           <button className="topbar__region" type="button" aria-label="Change region and currency">
             India&nbsp;|&nbsp;INR ₹ <ChevronDown />
           </button>
-          <span className="topbar__note">Complimentary shipping on orders above ₹5,000</span>
+          <span className="topbar__note">Complimentary express shipping &amp; 30-day audio trial</span>
         </div>
       </div>
 
@@ -46,9 +46,9 @@ export default function Header() {
 
         {/* The brand block is absolutely positioned so it rises into the
             topbar row and masks its border — the line breaks around the logo. */}
-        <a className="brand" href="#" aria-label="Shrujan home">
-          <img className="brand__logo" src="/logo-shrujan.png" alt="Shrujan" />
-          <span className="brand__tag">Heritage by Hand</span>
+        <a className="brand" href="#" aria-label="Novera Home">
+          <span className="brand__logo-text" style={{ fontSize: '26px', fontWeight: '700', letterSpacing: '0.25em', color: 'var(--ink)', fontFamily: 'var(--font-sans)', textTransform: 'uppercase' }}>NOVERA</span>
+          <span className="brand__tag">Pure Sound · Pure Experience</span>
         </a>
 
         <div className="header-utils">

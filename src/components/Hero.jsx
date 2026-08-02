@@ -66,113 +66,112 @@ export default function Hero() {
   )
 
   return (
-    <section className="hero" ref={root} aria-label="Tradition, styled forward">
+    <section className="hero" ref={root} aria-label="Pure Sound, Pure Experience">
       {/* ---- 1 · model ---- */}
       <a className="hero-cell hero-cell--model" href="#" data-hero="cell">
         <img
           src={IMG.model}
-          alt="Model in a rust-red ajrakh kurta with gold jewellery before an arched wall"
+          alt="Premium Novera headphones with sleek ergonomic design"
           fetchpriority="high"
         />
         <span className="hero-cell__label">
           <i className="hero-cell__dash" aria-hidden="true" />
-          Handcrafted
+          Acoustic
           <br />
-          Heritage.
+          Precision.
           <br />
           Modern
           <br />
-          Soul.
+          Design.
         </span>
       </a>
 
-      {/* ---- 2 · ivory message panel ---- */}
+      {/* ---- 2 · message panel ---- */}
       <div className="hero-cell hero-cell--message" data-hero="cell">
         <span className="hero-message__ornament" aria-hidden="true">
           <Mandala size={58} />
         </span>
         <h1 className="hero-message__title">
           <span className="line">
-            <span className="t-ink">Tradition,</span>
+            <span className="t-ink">Pure Sound,</span>
           </span>
           <span className="line">
-            <span className="t-red">Styled</span>
+            <span className="t-red">Pure</span>
           </span>
           <span className="line">
-            <span className="t-red">Forward</span>
+            <span className="t-red">Experience</span>
           </span>
         </h1>
         <span className="hero-message__rule" data-hero="rule" aria-hidden="true" />
         <p className="hero-message__copy" data-hero="copy">
-          Where centuries-old craftsmanship meets contemporary design. Timeless pieces
-          for today&rsquo;s tastemakers.
+          Every Novera product is crafted to deliver crystal-clear audio, deep bass, lasting comfort, and reliable performance for everyday life.
         </p>
         <a className="hero-message__cta" href="#categories" data-hero="cta">
-          Shop the Collection <ArrowRight width="17" height="17" />
+          Explore Audio Collection <ArrowRight width="17" height="17" />
         </a>
       </div>
 
       {/* ---- 3 · new season ---- */}
       <a className="hero-cell hero-cell--season" href="#" data-hero="cell">
-        <img src={IMG.season} alt="Model in a plum embroidered jacket set standing in an arched sand niche" />
+        <img src={IMG.season} alt="Novera Flagship Over-Ear Headphones" />
         <span className="hero-cell__scrim" aria-hidden="true" />
         <span className="hero-cell__label hero-cell__label--bottom">
-          <em>New Season</em>
-          Statement Looks
+          <em>New Generation</em>
+          Studio Headphones
           <ArrowRight width="16" height="16" />
         </span>
       </a>
 
-      {/* ---- 4 · craft in every thread ---- */}
+      {/* ---- 4 · acoustic precision ---- */}
       <a className="hero-cell hero-cell--thread" href="#" data-hero="cell">
-        <img src={IMG.thread} alt="Close crop of crimson silk with gold zari embroidery and sequin borders" />
+        <img src={IMG.thread} alt="Detail of acoustic driver and metallic finish" />
         <span className="hero-cell__scrim" aria-hidden="true" />
         <span className="hero-cell__label hero-cell__label--bottom">
-          <em>Craft</em>
-          In Every Thread
+          <em>Precision Audio</em>
+          In Every Frequency
           <ArrowRight width="16" height="16" />
         </span>
       </a>
 
-      {/* ---- 5 · plum story panel ---- */}
+      {/* ---- 5 · story panel ---- */}
       <div className="hero-cell hero-cell--story" data-hero="cell">
         <img src={IMG.story} alt="" aria-hidden="true" />
         <span className="hero-cell__scrim hero-cell__scrim--story" aria-hidden="true" />
         <p className="hero-story__title">
-          Rooted in heritage.
+          Music is more than sound.
           <br />
-          Made for tomorrow.
+          It is an experience.
         </p>
         <p className="hero-story__copy">
-          Supporting artisans.
+          Inspires clarity.
           <br />
-          Preserving traditions.
+          Connects deeply.
           <br />
-          Creating lasting impact.
+          Empowers every moment.
         </p>
         <a className="hero-story__link" href="#craft">
-          Our Story <ArrowRight width="15" height="15" />
+          Explore Technology <ArrowRight width="15" height="15" />
         </a>
       </div>
 
-      {/* ---- 6 · accessories ---- */}
+      {/* ---- 6 · earbuds & accessories ---- */}
       <a className="hero-cell hero-cell--accessories" href="#" data-hero="cell">
-        <img src={IMG.accessories} alt="Gold chandbali earrings with pearls resting on a brass plate" />
+        <img src={IMG.accessories} alt="Novera Wireless Earbuds with charging case" />
         <span className="hero-cell__scrim" aria-hidden="true" />
         <span className="hero-cell__label hero-cell__label--bottom">
-          Accessories that
+          True Wireless Earbuds &amp;
           <br />
-          complete the story
+          Audiophile Gear
           <ArrowRight width="16" height="16" />
         </span>
       </a>
 
-      {/* ---- 7 · crafted in India ---- */}
+      {/* ---- 7 · sound engineering ---- */}
       <a className="hero-cell hero-cell--india" href="#craft" data-hero="cell">
         <span className="hero-india__map" aria-hidden="true" />
         <span className="hero-cell__label hero-cell__label--bottom hero-cell__label--ink">
-          <em>Crafted</em>
-          In India
+          <em>Engineered</em>
+          For Perfection
           <ArrowRight width="16" height="16" />
         </span>
       </a>
